@@ -1,0 +1,27 @@
+   
+   @import "../utils/variables";
+   
+/*SECTION FOOTER*/
+    footer{
+        display: flex;
+        flex-flow:column wrap;
+        justify-content: flex-start;
+        background-color: #353535;
+        color:white;
+        padding:30px;
+
+        p{
+        font-family: "Shrikhand", cursive;
+        font-size: 18px;
+        margin:2px;
+        padding-bottom:10px;
+        }
+        
+        a{
+        text-decoration: none;
+        color:white;
+        font-family:$main-ffamily;
+        line-height: 25px;
+        }
+        }
+    

@@ -1,0 +1,132 @@
+//mixins
+
+@mixin flex_row {
+    display: flex;
+    flex-flow:row wrap;
+    align-items: center;
+    justify-content:center;
+}
+
+@mixin flex-column{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+@mixin grad-button{
+    border:none;
+    margin:20px;
+    padding: 18px 15px 18px 15px;
+    width:210px;
+    font-family: $main-ffamily;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    color:white;
+}
+
+@mixin grad-button-purple{       
+    background: #E78FE1;
+    background: -moz-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
+    background: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
+    background: linear-gradient(to bottom, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
+      }
+
+@mixin btn{
+            
+    font: 14px/2.3em trebuchet,arial;
+    color: #353535;
+    text-shadow: 0 1px 0 #fff;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 15px 15px;
+    width:320px;
+    margin: 3px auto 5px;
+    border: 1px solid #ddd;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -o-border-radius: 20px;
+    -ms-border-radius: 20px;
+    border-radius: 20px;
+    -moz-box-shadow: 0 3px 5px #ccc;
+    -webkit-box-shadow: 0 3px 5px #ccc;
+    -o-box-shadow: 0 3px 5px #ccc;
+    -ms-box-shadow: 0 3px 5px #ccc;
+    box-shadow: 0 3px 5px #ccc;
+    
+}
+
+@mixin h2_font{
+    font-family: $main-ffamily;
+    font-size:24px; 
+    font-weight:800;
+    text-align:center;
+    letter-spacing: 0;
+    padding-bottom: 0;
+    margin-bottom:0;
+}
+
+@mixin span-steps{
+    font-size:16px;
+    font-family:$main-ffamily;
+    font-weight: bold;
+}
+
+@mixin span-i-steps{
+    display:inline-flex;
+    align-items:center;
+    cursor:pointer;
+    gap:25px;
+    justify-content: center;
+    padding-left: 0;
+}
+
+@mixin img{
+height:185px;
+width:100%;
+border-radius: 15px 15px 0 0;
+object-fit: cover;
+}
+
+@mixin block-img{
+    display:flex;
+    background-color: #ffffff;
+    border-radius: 15px 15px 15px 15px ;
+    height:150px;
+    width:100%;
+    padding: 5px;
+    flex-grow:2;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+@mixin descriptif-block{
+        flex-flow: row wrap;
+        background-color: #ffffff;
+        padding:10px;
+        height:80px;
+        width:100%;
+        border-radius:0 0 15px 15px;
+        box-shadow: 0 0 20px #0000002e;
+}
+
+@mixin size_block{
+    width:320px;
+    height:250px;
+}
+
+@mixin h3_font{
+    font-size:19px;
+    font-weight: 800;
+    font-family: $main-ffamily;
+    letter-spacing: -1px;
+    margin-top: 0;
+    padding-left: 5px;
+    margin-bottom: 7px;
+}
+
+@mixin span-restaurants{
+    font-size: 20px;
+    padding-left: 5px;
+}

@@ -1,0 +1,87 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./base/base";
+@import "./layouts/header";
+@import "./layouts/footer";
+
+
+/*BACKGROUND*/
+.main{
+    background-color: #f6f6f6;
+}
+.block-image{
+    @include block-image;
+    #img-menu{
+     object-position: top;
+    }
+ }
+
+.plats-btns{
+    background-color:#f6f6f6;
+    margin-top: 0;
+    border-radius: 50px 50px 0 0;
+    position:relative;
+    margin-top:210px;
+
+    h2{
+        font-family:$header-ffamily;
+        font-weight: 500;
+        padding-left: 20px;
+        padding-top: 30px;
+        
+    }
+    h3{
+        font-weight: 100;
+        padding-left: 15px;
+
+
+
+    }
+}
+.btn-menu{
+    @include btn;
+    @include flex-column;
+    background-color: white;
+    height: 65px;
+    padding-top:30px;
+    margin-bottom: 15px;
+    width:350px;
+
+    .text-menu{
+        flex-flow: column wrap;      
+        line-height: 10px;
+        justify-content: center;
+        width: 100%;
+
+        h4{
+         @include h4_font;
+         text-align: left;
+        }
+        .descriptif-menu{
+            @include flex_row;
+            justify-content: space-between;
+            width:100%;
+                p{
+                    font-weight: bold;
+                }
+            }
+        }
+
+        &:last-child{
+            margin-bottom:0px;
+          
+        }
+        }
+  
+    .btn-cmder{
+        background-color: #f6f6f6;
+        text-align: center;
+
+        .Commander{
+        
+    @include grad-button-purple;
+    @include grad-button;
+    margin-top: 50px;
+    margin-bottom: 80px;
+        }
+    }

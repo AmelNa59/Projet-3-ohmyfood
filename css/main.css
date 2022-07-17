@@ -25,6 +25,8 @@ header h1 {
 /*SECTION FOOTER*/
 footer {
   display: flex;
+  position: absolute;
+  width: 100%;
   flex-flow: column wrap;
   justify-content: flex-start;
   background-color: #353535;
@@ -287,9 +289,8 @@ footer a {
   font-weight: 800;
   font-family: "Roboto", sans-serif;
   letter-spacing: -1px;
-  margin-top: 0;
+  margin: 0;
   padding-left: 5px;
-  margin-bottom: 7px;
 }
 .restaurants .palette .descriptif_palette span {
   font-size: 20px;
@@ -324,9 +325,8 @@ footer a {
   font-weight: 800;
   font-family: "Roboto", sans-serif;
   letter-spacing: -1px;
-  margin-top: 0;
+  margin: 0;
   padding-left: 5px;
-  margin-bottom: 7px;
 }
 .restaurants .note .descriptif_note span {
   font-size: 20px;
@@ -361,9 +361,8 @@ footer a {
   font-weight: 800;
   font-family: "Roboto", sans-serif;
   letter-spacing: -1px;
-  margin-top: 0;
+  margin: 0;
   padding-left: 5px;
-  margin-bottom: 7px;
 }
 .restaurants .française .descriptif_française span {
   font-size: 20px;
@@ -399,9 +398,8 @@ footer a {
   font-weight: 800;
   font-family: "Roboto", sans-serif;
   letter-spacing: -1px;
-  margin-top: 0;
+  margin: 0;
   padding-left: 5px;
-  margin-bottom: 7px;
 }
 .restaurants .delice .descriptif_delice span {
   font-size: 20px;

@@ -1,15 +1,15 @@
 {
   "name": "ohmyfood",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {
     "saas": "^1.0.0"
   },
   "devDependencies": {},
   "scripts": {
-    "sass": "sass --watch ./css/style.scss:.public/css/style.css"
-      },
+    "sass": "sass --watch ./css/menu1.scss:.public/css/menu1.css"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "description": ""
 }

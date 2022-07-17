@@ -59,7 +59,6 @@
             @include grad-button-purple();
             margin-bottom: 60px;
             
-            ;
         }
         }
 
@@ -89,18 +88,15 @@
       }
         
         .btn1{
-            @include btn();
-            @include span-i-steps;
+           @include btn-steps;
         }
 
         .btn2{
-            @include btn();
-            @include span-i-steps;
+         @include btn-steps;
         }
 
         .btn3{
-            @include btn();
-            @include span-i-steps;
+        @include btn-steps;
             margin-bottom: 30px;
         }
 

@@ -4,6 +4,8 @@
 /*SECTION FOOTER*/
     footer{
         display: flex;
+        position:absolute;
+        width:100%;
         flex-flow:column wrap;
         justify-content: flex-start;
         background-color: #353535;

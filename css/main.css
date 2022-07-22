@@ -8,6 +8,15 @@ html, body {
   position: relative;
 }
 
+.wrapper-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  width: 100%;
+  justify-items: center;
+  gap: 2em;
+  justify-content: center;
+}
+
 header {
   position: relative;
   display: flex;
@@ -128,54 +137,58 @@ footer a {
   align-self: start;
   margin: 30px;
 }
-
-.steps .wrapper-grid .btn1{
-  font: 14px/2.3em trebuchet,arial;
-  color: #353535;
-  text-shadow: 0 1px 0 #fff;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-  padding: 25px 15px;
-  width:320px;
-  position:relative;
-  margin: 3px auto 5px;
-  border: 1px solid #ddd;
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -o-border-radius: 20px;
-  -ms-border-radius: 20px;
-  border-radius: 20px;
-  -moz-box-shadow: 0 3px 5px #ccc;
-  -webkit-box-shadow: 0 3px 5px #ccc;
-  -o-box-shadow: 0 3px 5px #ccc;
-  -ms-box-shadow: 0 3px 5px #ccc;
-  box-shadow: 0 3px 5px #ccc;
-}
-.steps .wrapper-grid .btn1 .number{
-  counter-increment: compteListe 1;
-  content: counter(compteListe) " ";
-  background: #9356dc;
-  height:30px;
-  width: 30px;
-  border-radius: 100px;
-  display: flex;
+.steps .wrapper-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  width: 100%;
+  justify-items: center;
+  gap: 2em;
   justify-content: center;
+}
+.steps .wrapper-grid .btn1 {
+  width: 310px;
+}
+.steps .wrapper-grid .btn1 span {
+  background-color: #f6f6f6;
+  color: #191919;
+  font-weight: bold;
+}
+
+/*SECTION RESTAURANTS*/
+.restaurants {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  background-color: #f6f6f6;
+  align-content: center;
+  gap: 40px;
+}
+.restaurants h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin: 30px;
+  align-self: start;
+}
+.restaurants .palette {
+  display: flex;
+  flex-flow: row wrap;
   align-items: center;
-  color: #fff;
-  position: absolute;
-  left:-15px;
-
-
-
+  justify-content: center;
+  width: 320px;
+  height: 250px;
 }
-.steps .wrapper-grid .btn1 span{
-font-weight: bold;
-font-size:17px;
-letter-spacing: 0px;
-
+.restaurants .palette a {
+  width: 100%;
+  text-decoration: none;
+  color: #353535;
+  letter-spacing: -1px;
+  font-size: 13px;
 }
-
 .restaurants .palette #palettegout_img {
   height: 185px;
   width: 100%;
@@ -204,6 +217,14 @@ letter-spacing: 0px;
 .restaurants .palette .descriptif_palette span {
   font-size: 20px;
   padding-left: 5px;
+}
+.restaurants .palette .descriptif_palette i {
+  color: red;
+  display: inline-flex;
+  justify-items: end;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
 }
 .restaurants .note {
   display: flex;
@@ -337,13 +358,4 @@ letter-spacing: 0px;
 .restaurants .delice .descriptif_delice span {
   font-size: 20px;
   padding-left: 5px;
-}
-
-.wrapper-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-  width: 100%;
-  justify-items: center;
-  gap: 2em;
-  justify-content: center;
 }/*# sourceMappingURL=main.css.map */

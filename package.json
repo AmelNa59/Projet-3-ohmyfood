@@ -7,7 +7,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "sass": "sass --watch ./css/menu1.scss:.public/css/menu1.css"
+    "sass": "sass --watch ./css/menu1.scss:./css/menu1.css"
   },
   "author": "",
   "license": "ISC",

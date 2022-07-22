@@ -68,12 +68,10 @@ footer a {
 .block-image #img-menu {
   height: 260px;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .block-image #img-menu {
-  -o-object-position: center;
-     object-position: center;
+  object-position: top;
 }
 
 .plats-btns {
@@ -92,9 +90,11 @@ footer a {
 .plats-btns h3 {
   font-weight: 100;
   padding-left: 15px;
+  width: 200px;
+  position: relative;
+  z-index: 1;
 }
-
-.btn-menu {
+.plats-btns .btn-menu {
   font: 14px/2.3em trebuchet, arial;
   color: #353535;
   text-shadow: 0 1px 0 #fff;
@@ -105,7 +105,13 @@ footer a {
   width: 320px;
   margin: 3px auto 5px;
   border: 1px solid #ddd;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -o-border-radius: 20px;
+  -ms-border-radius: 20px;
   border-radius: 20px;
+  -moz-box-shadow: 0 3px 5px #ccc;
+  -webkit-box-shadow: 0 3px 5px #ccc;
   -o-box-shadow: 0 3px 5px #ccc;
   -ms-box-shadow: 0 3px 5px #ccc;
   box-shadow: 0 3px 5px #ccc;
@@ -115,16 +121,21 @@ footer a {
   background-color: white;
   height: 65px;
   padding-top: 30px;
+  transition: 0.2s;
   margin-bottom: 15px;
   width: 350px;
 }
-.btn-menu .text-menu {
+.plats-btns .btn-menu .text-menu {
   flex-flow: column wrap;
   line-height: 10px;
   justify-content: center;
   width: 100%;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
-.btn-menu .text-menu h4 {
+.plats-btns .btn-menu .text-menu h4 {
   font-size: 18px;
   font-weight: 600;
   font-family: "Roboto", sans-serif;
@@ -132,7 +143,7 @@ footer a {
   margin: 0;
   text-align: left;
 }
-.btn-menu .text-menu .descriptif-menu {
+.plats-btns .btn-menu .text-menu .descriptif-menu {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -140,11 +151,20 @@ footer a {
   justify-content: space-between;
   width: 100%;
 }
-.btn-menu .text-menu .descriptif-menu p {
+.plats-btns .btn-menu .text-menu .descriptif-menu p {
   font-weight: bold;
 }
-.btn-menu:last-child {
+.plats-btns .btn-menu:last-child {
   margin-bottom: 0px;
+}
+
+.wrapper-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  width: 100%;
+  justify-items: center;
+  gap: 2em;
+  justify-content: center;
 }
 
 .btn-cmder {
@@ -153,6 +173,8 @@ footer a {
 }
 .btn-cmder .Commander {
   background: #E78FE1;
+  background: -moz-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
+  background: -webkit-linear-gradient(top, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
   background: linear-gradient(to bottom, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
   border: none;
   margin: 20px;
@@ -167,11 +189,4 @@ footer a {
   margin-bottom: 80px;
 }
 
-.wrapper-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-  width: 100%;
-  justify-items: center;
-  gap: 2em;
-  justify-content: center;
-}/*# sourceMappingURL=menu2.css.map */
+/*# sourceMappingURL=menu1.css.map */

@@ -1,6 +1,7 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./base/base";
+@import "./composants/composants";
 @import "./layouts/header";
 @import "./layouts/footer";
 
@@ -78,10 +79,14 @@
         text-align: center;
 
         .Commander{
-        
+            
     @include grad-button-purple;
     @include grad-button;
     margin-top: 50px;
     margin-bottom: 80px;
         }
+    }
+
+    .wrapper-grid{
+        @include wrapper-grid;
     }

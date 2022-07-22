@@ -156,4 +156,13 @@ footer a {
   color: white;
   margin-top: 50px;
   margin-bottom: 80px;
+}
+
+.wrapper-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  width: 100%;
+  justify-items: center;
+  gap: 2em;
+  justify-content: center;
 }/*# sourceMappingURL=menu2.css.map */

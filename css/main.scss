@@ -1,6 +1,7 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./base/base";
+@import "./composants/composants";
 @import "./layouts/header";
 @import "./layouts/footer";
 
@@ -63,43 +64,34 @@
         }
 
      /*SECTION STEPS*/
-    .steps{
-    @include flex-column();
-    align-items: center;
-
-        h2{
-            @include h2_font();
-            align-self: start;
-            margin:30px;
+     .steps{
+        @include flex-column();
+        align-items: center;
+    
+            h2{
+                @include h2_font();
+                align-self: start;
+                margin:30px;
+            }
+            .wrapper-grid{
+                @include wrapper-grid;
+          
+                .btn1{
+                    width:310px;
+                        span{
+                    background-color: #f6f6f6;
+                    color:#191919;
+                    font-weight: bold;
+                            }
+                            }
+                        }
         }
-        ol{
-    @include flex-column();
-    gap:15px;
-            
-            .btn-menu{
-      
-            .btn1{
-                    @include btn-steps;
-                 }
-        }
-
-        .btn3{
-        @include btn-steps;
-            margin-bottom: 30px;
-        }
-
-        span{
-        background-color: #f6f6f6;
-        color:#191919
-                }
-                }
-    }
-}
-
+    
+    
     /*SECTION RESTAURANTS*/
     .restaurants{
         @include flex-column();
-        background-color: $background-block-section;
+        background-color:#f6f6f6;
         align-content: center;
         gap:40px;
         h2{
@@ -107,16 +99,26 @@
             align-self: start;
         }
 
+        
         .palette{
             @include flex_row();
             @include size_block();
 
+            a{
+                width:100%;
+                text-decoration: none;
+              color:#353535;
+              letter-spacing:-1px;
+              font-size: 13px;
+
+            }
            #palettegout_img {
             @include img();
             }
 
             .descriptif_palette{
             @include descriptif-block();
+            margin-top:-4px;
             h3{
                 @include h3_font();
             }
@@ -124,12 +126,29 @@
             span{
                 @include span-restaurants();
             }
+            i{
+                color:red;
+                display:inline-flex;
+                justify-items: end;
+                cursor:pointer;
+                width:35px;
+                height:35px;
+             
+                }
             }
         }
         
         .note{
             @include flex_row();
             @include size_block();
+            a{
+                width:100%;
+                text-decoration: none;
+              color:#353535;
+              letter-spacing:-1px;
+              font-size: 13px;
+
+            }
     
             #note_img {
             @include img();
@@ -138,7 +157,7 @@
     
             .descriptif_note{
             @include descriptif-block();
-
+            margin-top:-4px;
             h3{
                 @include h3_font();
             }
@@ -151,6 +170,14 @@
         .française{
             @include flex_row();
             @include size_block();
+            a{
+                width:100%;
+                text-decoration: none;
+              color:#353535;
+              letter-spacing:-1px;
+              font-size: 13px;
+
+            }
             
             #française_img {
             @include img();
@@ -158,7 +185,7 @@
 
         .descriptif_française{
         @include descriptif-block();
-
+        margin-top:-4px;
         h3{
             @include h3_font();
         }
@@ -173,13 +200,21 @@
             @include size_block();
             margin-bottom: 90px;
             
+            a{
+                width:100%;
+                text-decoration: none;
+              color:#353535;
+              letter-spacing:-1px;
+              font-size: 13px;
+
+            }
             #delicesens_img {
             @include img()
             }
 
         .descriptif_delice{
         @include descriptif-block();
-        
+        margin-top:-4px;
         h3{
             @include h3_font();
         }
@@ -187,7 +222,8 @@
         span{
             @include span-restaurants();
         }
+    }
         }
     }
-    }
-
+    
+ 

@@ -124,55 +124,58 @@ footer a {
   letter-spacing: 0;
   padding-bottom: 0;
   margin-bottom: 0;
+  margin: 30px;
   align-self: start;
   margin: 30px;
 }
-.steps ol {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  gap: 15px;
-}
-.steps ol .list-numbered {
-  list-style: none;
-  counter-reset: line;
-  padding-left: 0;
-}
-.steps ol .list-numbered > li {
-  position: relative;
-  margin-bottom: 8px;
-}
-.steps ol .btn1 {
-  font: 14px/2.3em trebuchet, arial;
+
+.steps .wrapper-grid .btn1{
+  font: 14px/2.3em trebuchet,arial;
   color: #353535;
   text-shadow: 0 1px 0 #fff;
   text-align: center;
   text-decoration: none;
   display: block;
-  padding: 15px 15px;
-}
-.steps ol .btn2 {
-  font: 14px/2.3em trebuchet, arial;
-  color: #353535;
-  text-shadow: 0 1px 0 #fff;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-  padding: 15px 15px;
-  width: 320px;
+  padding: 25px 15px;
+  width:320px;
+  position:relative;
   margin: 3px auto 5px;
   border: 1px solid #ddd;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -o-border-radius: 20px;
+  -ms-border-radius: 20px;
   border-radius: 20px;
+  -moz-box-shadow: 0 3px 5px #ccc;
+  -webkit-box-shadow: 0 3px 5px #ccc;
   -o-box-shadow: 0 3px 5px #ccc;
   -ms-box-shadow: 0 3px 5px #ccc;
   box-shadow: 0 3px 5px #ccc;
-  display: inline-flex;
-  align-items: center;
-  cursor: pointer;
-  gap: 25px;
-  justify-content: center;
-  padding-left: 0;
 }
+.steps .wrapper-grid .btn1 .number{
+  counter-increment: compteListe 1;
+  content: counter(compteListe) " ";
+  background: #9356dc;
+  height:30px;
+  width: 30px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  left:-15px;
+
+
+
+}
+.steps .wrapper-grid .btn1 span{
+font-weight: bold;
+font-size:17px;
+letter-spacing: 0px;
+
+}
+
 .restaurants .palette #palettegout_img {
   height: 185px;
   width: 100%;
@@ -188,6 +191,7 @@ footer a {
   width: 100%;
   border-radius: 0 0 15px 15px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1803921569);
+  margin-top: -4px;
 }
 .restaurants .palette .descriptif_palette h3 {
   font-size: 19px;
@@ -209,6 +213,13 @@ footer a {
   width: 320px;
   height: 250px;
 }
+.restaurants .note a {
+  width: 100%;
+  text-decoration: none;
+  color: #353535;
+  letter-spacing: -1px;
+  font-size: 13px;
+}
 .restaurants .note #note_img {
   height: 185px;
   width: 100%;
@@ -224,6 +235,7 @@ footer a {
   width: 100%;
   border-radius: 0 0 15px 15px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1803921569);
+  margin-top: -4px;
 }
 .restaurants .note .descriptif_note h3 {
   font-size: 19px;
@@ -245,6 +257,13 @@ footer a {
   width: 320px;
   height: 250px;
 }
+.restaurants .française a {
+  width: 100%;
+  text-decoration: none;
+  color: #353535;
+  letter-spacing: -1px;
+  font-size: 13px;
+}
 .restaurants .française #française_img {
   height: 185px;
   width: 100%;
@@ -260,6 +279,7 @@ footer a {
   width: 100%;
   border-radius: 0 0 15px 15px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1803921569);
+  margin-top: -4px;
 }
 .restaurants .française .descriptif_française h3 {
   font-size: 19px;
@@ -282,6 +302,13 @@ footer a {
   height: 250px;
   margin-bottom: 90px;
 }
+.restaurants .delice a {
+  width: 100%;
+  text-decoration: none;
+  color: #353535;
+  letter-spacing: -1px;
+  font-size: 13px;
+}
 .restaurants .delice #delicesens_img {
   height: 185px;
   width: 100%;
@@ -297,6 +324,7 @@ footer a {
   width: 100%;
   border-radius: 0 0 15px 15px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1803921569);
+  margin-top: -4px;
 }
 .restaurants .delice .descriptif_delice h3 {
   font-size: 19px;
@@ -309,4 +337,13 @@ footer a {
 .restaurants .delice .descriptif_delice span {
   font-size: 20px;
   padding-left: 5px;
+}
+
+.wrapper-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  width: 100%;
+  justify-items: center;
+  gap: 2em;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */

@@ -83,9 +83,11 @@ footer a {
 .plats-btns h3 {
   font-weight: 100;
   padding-left: 15px;
+  width: 200px;
+  position: relative;
+  z-index: 1;
 }
-
-.btn-menu {
+.plats-btns .btn-menu {
   font: 14px/2.3em trebuchet, arial;
   color: #353535;
   text-shadow: 0 1px 0 #fff;
@@ -106,16 +108,21 @@ footer a {
   background-color: white;
   height: 65px;
   padding-top: 30px;
+  transition: 0.2s;
   margin-bottom: 15px;
   width: 350px;
 }
-.btn-menu .text-menu {
+.plats-btns .btn-menu .text-menu {
   flex-flow: column wrap;
   line-height: 10px;
   justify-content: center;
   width: 100%;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
-.btn-menu .text-menu h4 {
+.plats-btns .btn-menu .text-menu h4 {
   font-size: 18px;
   font-weight: 600;
   font-family: "Roboto", sans-serif;
@@ -123,7 +130,7 @@ footer a {
   margin: 0;
   text-align: left;
 }
-.btn-menu .text-menu .descriptif-menu {
+.plats-btns .btn-menu .text-menu .descriptif-menu {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -131,18 +138,25 @@ footer a {
   justify-content: space-between;
   width: 100%;
 }
-.btn-menu .text-menu .descriptif-menu p {
+.plats-btns .btn-menu .text-menu .descriptif-menu p {
   font-weight: bold;
 }
-.btn-menu:last-child {
+.plats-btns .btn-menu:last-child {
   margin-bottom: 0px;
 }
-
-.btn-cmder {
+.plats-btns .wrapper-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 3fr));
+  width: 100%;
+  justify-items: center;
+  gap: 2em;
+  justify-content: center;
+}
+.plats-btns .btn-cmder {
   background-color: #f6f6f6;
   text-align: center;
 }
-.btn-cmder .Commander {
+.plats-btns .btn-cmder .Commander {
   background: #E78FE1;
   background: linear-gradient(to bottom, #E78FE1 0%, #C065DB 80%, #A35BDC 100%);
   border: none;

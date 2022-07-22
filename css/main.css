@@ -150,19 +150,6 @@ footer a {
   text-decoration: none;
   display: block;
   padding: 15px 15px;
-  width: 320px;
-  margin: 3px auto 5px;
-  border: 1px solid #ddd;
-  border-radius: 20px;
-  -o-box-shadow: 0 3px 5px #ccc;
-  -ms-box-shadow: 0 3px 5px #ccc;
-  box-shadow: 0 3px 5px #ccc;
-  display: inline-flex;
-  align-items: center;
-  cursor: pointer;
-  gap: 25px;
-  justify-content: center;
-  padding-left: 0;
 }
 .steps ol .btn2 {
   font: 14px/2.3em trebuchet, arial;
@@ -185,88 +172,6 @@ footer a {
   gap: 25px;
   justify-content: center;
   padding-left: 0;
-}
-.steps ol .btn3 {
-  font: 14px/2.3em trebuchet, arial;
-  color: #353535;
-  text-shadow: 0 1px 0 #fff;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-  padding: 15px 15px;
-  width: 320px;
-  margin: 3px auto 5px;
-  border: 1px solid #ddd;
-  border-radius: 20px;
-  -o-box-shadow: 0 3px 5px #ccc;
-  -ms-box-shadow: 0 3px 5px #ccc;
-  box-shadow: 0 3px 5px #ccc;
-  display: inline-flex;
-  align-items: center;
-  cursor: pointer;
-  gap: 25px;
-  justify-content: center;
-  padding-left: 0;
-  margin-bottom: 30px;
-}
-.steps ol span {
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-}
-.steps .list-numbered {
-  list-style: none;
-  counter-reset: line;
-  padding-left: 0;
-}
-.steps .list-numbered > li {
-  position: relative;
-  margin-bottom: 8px;
-  padding-left: 0;
-}
-.steps .list-numbered > li:before {
-  position: absolute;
-  left: -10px;
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  margin-right: 0.5em;
-  background-color: #9356dc;
-  border-radius: 50%;
-  color: #fff;
-  text-align: center;
-  line-height: 30px;
-  counter-increment: line;
-  content: counter(line);
-  margin-top: 20px;
-}
-
-/*SECTION RESTAURANTS*/
-.restaurants {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  background-color: #f6f6f6;
-  align-content: center;
-  gap: 40px;
-}
-.restaurants h2 {
-  font-family: "Roboto", sans-serif;
-  font-size: 24px;
-  font-weight: 800;
-  text-align: center;
-  letter-spacing: 0;
-  padding-bottom: 0;
-  margin-bottom: 0;
-  align-self: start;
-}
-.restaurants .palette {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
-  width: 320px;
-  height: 250px;
 }
 .restaurants .palette #palettegout_img {
   height: 185px;
